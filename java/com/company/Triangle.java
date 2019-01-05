@@ -6,23 +6,24 @@ public class Triangle {
         double a = 6.5;
         double b = 2.0;
         double c = 2.0;
-        Boolean result = buildTriangle(c, a, b);
+        int result = buildTriangle(c, a, b);
     }
 
-    public static Boolean buildTriangle(double a, double b, double c){
+    public static int buildTriangle(double a, double b, double c){
         if(b <= 0 || a <= 0 || c <= 0) {
-            return false;
+            return 0;
         }
         double AB = a+b;
         double BC = b+c;
         double CA = c+a;
         if(AB>=c&&BC>=a&&CA>=b){
-            System.out.println("Треугольник построен!");
-            return true;
+            //System.out.println("Треугольник построен!");
+            return 1;
         }else{
-            System.out.println("Треугольник не построен!");
-            return false;
+            //System.out.println("Треугольник не построен!");
+            return 0;
         }
+
 
 
     }
