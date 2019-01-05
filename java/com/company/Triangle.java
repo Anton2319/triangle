@@ -13,6 +13,9 @@ public class Triangle {
         if(b <= 0 || a <= 0 || c <= 0) {
             return 0;
         }
+        if(a == b && b == c && a == c){
+            return 2;
+        }
         double AB = a+b;
         double BC = b+c;
         double CA = c+a;
