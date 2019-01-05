@@ -7,6 +7,7 @@ public class TriangleTest {
     @Test
     public void test() {
         Assert.assertEquals(2, Triangle.buildTriangle(2.0, 2.0, 2.0));
+        Assert.assertEquals(3, Triangle.buildTriangle(2.0, 1.0, 1.0));
         Assert.assertEquals(0, Triangle.buildTriangle(500.0, 2.0, 2.0));
         Assert.assertEquals(1,  Triangle.buildTriangle(4.0, 3.0, 2.0));
         Assert.assertEquals(1,  Triangle.buildTriangle(2.0, 4.0, 3.0));

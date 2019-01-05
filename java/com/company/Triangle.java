@@ -13,17 +13,23 @@ public class Triangle {
         if(b <= 0 || a <= 0 || c <= 0) {
             return 0;
         }
-        if(a == b && b == c && a == c){
+        if(a == b && b == c && a == c) {
+            System.out.println("Треугольник равносторонний!");
             return 2;
         }
+
         double AB = a+b;
         double BC = b+c;
         double CA = c+a;
         if(AB>=c&&BC>=a&&CA>=b){
-            //System.out.println("Треугольник построен!");
+            if(a == b || c == b || a == c) {
+                System.out.println("Треугольник равнобедренный!");
+                return 3;
+            }
+            System.out.println("Треугольник обыкновенный!");
             return 1;
         }else{
-            //System.out.println("Треугольник не построен!");
+            System.out.println("Треугольник не построен!");
             return 0;
         }
 
